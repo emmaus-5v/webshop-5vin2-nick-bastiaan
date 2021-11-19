@@ -4,6 +4,10 @@ body{background-color: rgb(44, 47, 51);}
 footer {
   margin: 20px;
   font-size: 12px;
+<<<<<<< HEAD
+=======
+  color: rgb(129, 0, 189);
+>>>>>>> afbffa590c10bd12581bebbd3712d2d4674f946b
 } 
 
 .toast {
