@@ -21,8 +21,8 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price) values ('Hamburger', 'Beautiful Pink Thing.', '816905633-0', 20);
-insert into products (name, description, code, price) values ('Post Mortem', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+insert into products (name, description, code, price) values ('Hamburger', 'Beautiful brown Thing.', '816905633-0', 20);
+insert into products (name, description, code, price) values ('Apple', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
 
 Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
