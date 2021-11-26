@@ -1,5 +1,8 @@
 /* all pages */
-body{background-color: rgb(44, 47, 51);}
+body {
+  background-color: rgb(44, 47, 51);
+
+}
 
 footer {
   margin: 20px;
