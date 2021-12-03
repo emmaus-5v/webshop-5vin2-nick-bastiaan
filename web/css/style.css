@@ -23,10 +23,12 @@ footer {
 .shop-button {
   font-size: 15px;
   margin-top: -4px;
+  color:black;
 }
 
 .article-container {
   margin: auto;
+  color:black;
 }
 
 .card {
