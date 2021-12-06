@@ -1,6 +1,6 @@
 /* all pages */
 body {
-  background-color: rgb(44, 47, 51);
+  background-color: rgb(243,240,255);
   color: whitesmoke
 
 }
@@ -35,6 +35,7 @@ footer {
   width:200px; 
   height: 700px; 
   margin-bottom: 20px
+  background-color: rgba(228,221,247,255);
 }
 
 .card-header {
