@@ -1,14 +1,16 @@
 /* all pages */
 body {
   background-color: rgb(243,240,255);
-  color: whitesmoke
+  color: rgb(0, 0, 0)
 
 }
 
 footer {
   margin: 20px;
   font-size: 12px;
-  color: rgb(255, 255, 255);
+  color: rgb(99, 83, 100);
+  background-color:rgb(232, 220, 244);
+
 
 }
 
@@ -18,6 +20,7 @@ footer {
     top: 50px; 
     right: 0; 
     z-index:0;
+    
 }
 
 .shop-button {
@@ -34,16 +37,18 @@ footer {
 .card {
   width:200px; 
   height: 700px; 
-  margin-bottom: 20px
-  background-color: rgba(228,221,247,255);
+  margin-bottom: 20px;
+  background-color:rgb(232, 220, 244);
 }
 
 .card-header {
   height: 5em;
+  background-color:rgb(232, 220, 244);
 }
 
 .card-text {
-  min-height:10em
+  min-height:10em;
+  background-color:rgb(232, 220, 244);
 }
 
 /* index page */
@@ -52,6 +57,7 @@ footer {
   height: inherit; 
   margin-bottom: 20px;
   margin-top: 20px;
+  background-color:rgb(232, 220, 244);
 }
 
 .product img {
@@ -60,7 +66,8 @@ footer {
 }
 
 .product > .card-header {
-  height:3em
+  height:3em;
+  background-color:rgb(193, 150, 212);
 }
 
 .product-properties > li > .property-name {
@@ -68,7 +75,8 @@ footer {
   width: 50px;
 }
 .product_amount {
-  width: 80px
+  width: 80px;
+
 }
 
 /* basket page */
@@ -76,7 +84,8 @@ footer {
   margin-top:20px;
   list-style: none; 
   padding-left: 5px; 
-  font-size: 15px"
+  font-size: 15px;
+  background-color:rgb(232, 220, 244);
 }
 
 .product_row  .product-properties  li {
@@ -84,3 +93,11 @@ footer {
   float: left;
 }
 
+.bg-light {
+background-color: red;
+
+}
+
+.navbar-custom {
+  background-color:rgb(171, 116, 203) ;
+}
