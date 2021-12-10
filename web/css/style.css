@@ -101,3 +101,21 @@ background-color: red;
 .navbar-custom {
   background-color:rgb(171, 116, 203) ;
 }
+
+.btn-custom:hover{
+  background-color: rgba(87, 20, 131, 0.76);
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  
+}
+
+.btn-custom{
+  background-color: rgb(232, 220, 244);
+  color:black;
+  border-color: black;
+}
+
+#show_when_empty_basket{
+  background-color: rgb(193, 150, 212);
+  caret-color: rgb(193, 150, 212)
+}
