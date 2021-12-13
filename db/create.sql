@@ -21,20 +21,19 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price) values ('Hamburger', 'Beautiful juicy charred brown Thing, a sensation to the tastebuds.', '816905633-0', 20);
-insert into products (name, description, code, price) values ('Apple', 'apple go brrr', '077030122-3', 11);
-insert into products (name, description, code, price) values ('Scarlet and the Black, The', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '445924201-X', 13.5);
-insert into products (name, description, code, price) values ('Warrom wwerkt niet man', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '693155505-7', 13.5);
-insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
-insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
-
+insert into products (name, description, code, price) values ('Cuddle Team Leader', 'Hug it out.', '836596603-D', 16);
+insert into products (name, description, code, price) values ('Red Knight', 'The red menace of Anarchy Acres.', '736502958-A', 16);
+insert into products (name, description, code, price) values ('Ark', 'Upholding the principles of righteous victory.', '629573056-K', 16);
+insert into products (name, description, code, price) values ('Arachne', 'Weave a web to victory.', '947603756-X', 16);
+insert into products (name, description, code, price) values ('Onesie', 'Smash that snooze button.', '738405689-Z', 12);
+insert into products (name, description, code, price) values ('iKONik', 'Define the moment.', '048563946-O', 12);
+insert into products (name, description, code, price) values ('Dread Fate', 'May they dread their encounter with fate.', '846583659-L', 12 );
+insert into products (name, description, code, price) values ('Kuno', 'Master the art of deception.', '364596740-3', 12);
+insert into products (name, description, code, price) values ('Ruby', 'Sometimes you gotta shine.', '816905633-0', 8);
+insert into products (name, description, code, price) values ('Maki Master', 'Roll up your sleeves and get to work.', '077030122-3', 8);
+insert into products (name, description, code, price) values ('Skully', 'Accept nothing less then stylish domination.', '445924201-X', 8);
+insert into products (name, description, code, price) values ('Chance', 'Leave it to chance.', '693155505-7', 8);
+insert into products (name, description, code, price) values ('Aura', 'Get the goods in style.', '686928463-6', 6.40);
+insert into products (name, description, code, price) values ('Red Jade', 'Summon your fighting spirit.', '378367503-P', 6.40);
+insert into products (name, description, code, price) values ('Nog Ops', 'Have yourself a merry little skirmish.', '492662523-7', 6.40);
+insert into products (name, description, code, price) values ('Crystal', 'Clarity, wits and vision.', "182476713-0", 6.40)

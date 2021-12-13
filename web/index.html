@@ -19,7 +19,7 @@
         </button>
 		</div>
 		<div class="toast-body">
-			Ga naar je <a href="/basket.html">Winkelwagen</a> om af te rekenen
+			Ga naar je <a href="/basket.html">basket</a> om af te rekenen
 		</div>
 	</div>
 
@@ -35,19 +35,22 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Artikelen <span class="sr-only">(current)</span></a>
 				</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">V-Bucks <span class="sr- only"></span></a>
+					</li>
 			</ul>
 			<a
-				href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-light btn btn-outline-dark btn-custom" type="submit">Winkelwagen <span class="num_products"></span></button></a>
+				href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-light btn btn-outline-dark btn-custom" type="submit">basket <span class="num_products"></span></button></a>
 		</div>
 	</nav>
 
   <!-- lijst met producten, wordt gevuld door javascript -->
 	<main id="index">
 		<div class="container">
-			<h5>Artikelen</h5>
-			<p>Hier zie je een lijst met artikelen die je bij mij kunt bestellen.</p>
-			<p>klik op een artikel voor meer informatie<p>
-					<p>klik op de "winkelwagentje" om het artikel in je winkelwagen te stoppen</p>
+			<h5 class="text-centered">Products</h5>
+			<p class="text-centered"> Here you see a list of all the products we have for sale. <br>
+			Click on your desired product for more information<br>
+					Click on the shopping cart to add the product to your basket</p>
 		</div>	
     <!-- template for product info-->
   	<template id="productcard">
@@ -73,10 +76,12 @@
   <!-- voettekst -->
 	<footer>
 		<hr>
-      <p>Het maken van deze website is een opdracht voor het vak informatica op het Emmauscollege Rotterdam.</p>
+      <p>Het maken van deze website is een opdracht voor het vak informatica op het Emmauscollege Rotterdam.<br>
+		We hadden echt geen idee wat we wilden verkopen, dus nu zijn het fortnite skins
+	</p>
 	</footer>
 
-	<script src="/js/basket.js"></script> <!-- functies voor de winkelwagen -->
+	<script src="/js/basket.js"></script> <!-- functies voor de basket -->
 	
   <script> // functies om de producten te laden en tonen op de webpagina
     

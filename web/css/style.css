@@ -11,8 +11,8 @@ footer {
   color: rgb(99, 83, 100);
   background-color:rgb(232, 220, 244);
 
-
 }
+
 
 .toast {
     /* dirty: below 'card' button  */
@@ -115,7 +115,21 @@ background-color: red;
   border-color: black;
 }
 
-#show_when_empty_basket{
+.btn-custom:active{
+  background-color: rgba(87, 20, 131, 0.678) !important;
+  border-color: white !important;
+  box-shadow: none;
+}
+
+.alert-custom{
   background-color: rgb(193, 150, 212);
-  caret-color: rgb(193, 150, 212)
+  border-color: black;
+  color:white;
+}
+
+.form-custom:active{
+border-color: rgb(225, 65, 65) !important;}
+
+.text-centered{
+  text-align: center;
 }

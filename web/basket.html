@@ -17,23 +17,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Artikelen</a>
+            <a class="nav-link" href="/">Articles</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">TEST</a>
         </ul>
-        <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-custom" type="submit">Winkelwagen <span class="num_products"></span></button></a>
+        <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-custom" type="submit">basket <span class="num_products"></span></button></a>
       </div>
     </nav>
 
     <main>
-        <!-- inhoud winkelwagen -->
+        <!-- inhoud basket -->
         <div class="container" id="index">
-          <h4>Winkelwagen</h4>
-          <p>Hier zie je de lijst met artikelen uit je winkelwagen.</p>
-          <p>Door op plus en min te drukken kun je het aantal per artikel aanpassen</p>   
-          <!-- melding die wordt getoond als je winkelwagen leeg is -->
+          <h4 class="text-centered">basket</h4>
+          <p class="text-centered">Here you see the list of articles inside of your basket. <br>
+          By pressing plus and min you can adjust the quantity</p>   
+          <!-- melding die wordt getoond als je basket leeg is -->
           <div id="show_when_empty_basket">
-          <div class="alert alert-info" > 
-            Je winkelwagen is leeg! 
+          <div class="alert alert-info alert-custom" > 
+            Your basket is empty! 
           </div>
           </div>
           <!-- template for product info-->
@@ -46,8 +48,8 @@
             <div class="card-body">
               <ul class="product-properties">
                 <li><span class="propert-name">Id:</span><span class="product_id_show"></span></li>
-                <li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
-                <li><span class="propert-name">Aantal:</span><span class="product_amount_show"></span></li>
+                <li><span class="propert-name">Price:</span><span class="product_price"></span></li>
+                <li><span class="propert-name">Amount:</span><span class="product_amount_show"></span></li>
               </ul>
               <!-- input field needed as parameter for + and - -->
               <input class="product_amount" name="deltaAmount" value="1" type="hidden">
@@ -63,20 +65,20 @@
           </template>
         </div>
 
-         <!-- totaal bedrag winkelwagen en knop voor Winkelwagen legen en knop voor Verder winkelen-->
+         <!-- totaal bedrag basket en knop voor basket legen en knop voor Verder winkelen-->
         <div class="container" id="totaal">
-            <p>Totaal bedrag: € <span class="sum_products">0.00</span></p>
+            <p>Total price: € <span class="sum_products">0.00</span> </p>
             <p>
-              <button class="btn btn-outline-dark shop-button" onClick="if(confirm('Winkelwagen legen?')) { emptyBasket(); location.href='basket.html' }">Winkelwagen legen</button> <!-- beetje lomp om hele pagina opnieuw te laden na legen -->
-              <button class="btn btn-outline-dark shop-button" onClick="location.href='index.html'">Verder winkelen</button>
+              <button class="btn btn-outline-dark shop-button" onClick="if(confirm('basket legen?')) { emptyBasket(); location.href='basket.html' }">empty basket</button> <!-- beetje lomp om hele pagina opnieuw te laden na legen -->
+              <button class="btn btn-outline-dark shop-button" onClick="location.href='index.html'">resume shopping</button>
             </p>
         </div>
 
         <!-- bestelformulier -->
         <form class="container" id="orderForm">
-          <h4>Vul hieronder je adresgegevens in</h4>
-          <div class="form-group">
-            <label for="naam">Naam</label>
+          <h4>Fill in your shipping information</h4>
+          <div class="form-group form-custom">
+            <label for="naam">Name</label>
               <input required
                      class="form-control"
                      name="name" 
@@ -85,7 +87,7 @@
                      onchange="this.setCustomValidity('')">
           </div>
           <div class="form-group">
-            <label for="adres">Adres</label>
+            <label for="adres">Adress</label>
             <input required 
                    class="form-control"
                    name="adres" 
@@ -94,7 +96,7 @@
                    onchange="this.setCustomValidity('')">
           </div>
           <div class="form-group">
-            <label for="postcode">Postcode</label>
+            <label for="postcode">Postal code</label>
             <input required 
                    class="form-control"
                    name="postcode" 
@@ -103,7 +105,7 @@
                    onchange="this.setCustomValidity('')">
           </div>
           <div class="form-group">
-            <label for="plaats">Woonplaats</label>
+            <label for="plaats">Residence</label>
             <input required 
                    class="form-control"
                    name="plaats" 
@@ -122,7 +124,7 @@
                    onchange="this.setCustomValidity('')">
           </div>
           <div>
-            <label for="phone">Mobiel</label>
+            <label for="phone">phone number</label>
             <input required 
                    class="form-control"
                    type="tel" 
@@ -132,9 +134,9 @@
                    oninvalid="this.setCustomValidity('Geen geldig mobiel nummer opgegeven')" 
                    onchange="this.setCustomValidity('')">
           </div>
-          <p>...en klik op bestellen<p>
-          <p>Als ik je bestelling gezien heb, dan ontvang je van mij een Tikkie. Zodra je betaald hebt, stuur ik de spullen op.</p>
-          <button type="button" class="btn btn-outline-success shop-button" onclick="checkout()">Bestellen</button>
+          <p>...and click order<p>
+          <p>When I've seen your order, You'll receive a "Tikkie".As soon as you've paid, I'll send you the codes.</p>
+          <button type="button" class="btn btn-outline-success shop-button" onclick="checkout()">order</button>
         </form>
         
         <!-- bevestiging van bestelling -->
@@ -163,7 +165,7 @@
     <script src="/js/basket.js"></script>
     <script> // script to show basket when page is loaded
 
-        // toon bericht dat winkelwagen leeg is als winkelwagen leeg is
+        // toon bericht dat basket leeg is als basket leeg is
         function setIfEmptyMsg() {
           const basket = readBasket()
           var numkeys = Object.keys(basket).length
@@ -175,7 +177,7 @@
         }
 
       // deze functie wordt aangeroepen als de webpagina is geladen en
-      // toont de inhoud van de winkelwagen 
+      // toont de inhoud van de basket 
       (function() {
         // your page initialization code here
         // the DOM will be available here
@@ -185,7 +187,7 @@
         
         const basket = readBasket()
 
-        // voeg alle producten uit de winkelwagen toe aan webpagina
+        // voeg alle producten uit de basket toe aan webpagina
         for (id in basket) { // herhaal voor alle producten in de winkelmand
           const amount = basket[id]
           const product = JSON.parse(localStorage.getItem(`item_${id}`))
