@@ -23,7 +23,7 @@ CREATE TABLE products (
 
 insert into products (name, description, code, price) values ('Cuddle Team Leader', 'Hug it out.', '836596603-D', 16);
 insert into products (name, description, code, price) values ('Red Knight', 'The red menace of Anarchy Acres.', '736502958-A', 16);
-insert into products (name, description, code, price) values ('Ark', 'Upholding the principles of righteous victory.', '629573056-K', 16);
+insert into products (name, description, code, price) values ('Ark', 'Upholding the principles of victory.', '629573056-K', 16);
 insert into products (name, description, code, price) values ('Arachne', 'Weave a web to victory.', '947603756-X', 16);
 insert into products (name, description, code, price) values ('Onesie', 'Smash that snooze button.', '738405689-Z', 12);
 insert into products (name, description, code, price) values ('iKONik', 'Define the moment.', '048563946-O', 12);

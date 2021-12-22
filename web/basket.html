@@ -10,32 +10,29 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-		<a class="navbar-brand" href="/">Shop</a>
+		<a class="navbar-brand" href="/">Plum-Dinosaur-Shop</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Articles</a>
+            <a class="nav-link" href="/"></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/">TEST</a>
         </ul>
-        <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-custom" type="submit">basket <span class="num_products"></span></button></a>
+        <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-custom btn-light btn btn-outline-dark" type="submit"> Shopping cart <span class="num_products"></span></button></a>
       </div>
     </nav>
 
     <main>
         <!-- inhoud basket -->
         <div class="container" id="index">
-          <h4 class="text-centered">basket</h4>
-          <p class="text-centered">Here you see the list of articles inside of your basket. <br>
-          By pressing plus and min you can adjust the quantity</p>   
-          <!-- melding die wordt getoond als je basket leeg is -->
+          <h4 class="text-centered"><br>Shopping cart</h4>
+          <p class="text-centered">Here you see the list of articles inside of your cart.</p>   
+          <!-- melding die wordt getoond als je basket empty is -->
           <div id="show_when_empty_basket">
           <div class="alert alert-info alert-custom" > 
-            Your basket is empty! 
+            Your cart is empty! 
           </div>
           </div>
           <!-- template for product info-->
@@ -47,9 +44,9 @@
             </div>
             <div class="card-body">
               <ul class="product-properties">
-                <li><span class="propert-name">Id:</span><span class="product_id_show"></span></li>
-                <li><span class="propert-name">Price:</span><span class="product_price"></span></li>
-                <li><span class="propert-name">Amount:</span><span class="product_amount_show"></span></li>
+                <li><span class="propert-name">id: </span><span class="product_id_show"></span></li>
+                <li><span class="propert-name">Price: </span><span class="product_price"></span></li>
+                <li><span class="propert-name">Amount: </span><span class="product_amount_show"></span></li>
               </ul>
               <!-- input field needed as parameter for + and - -->
               <input class="product_amount" name="deltaAmount" value="1" type="hidden">
@@ -69,8 +66,8 @@
         <div class="container" id="totaal">
             <p>Total price: € <span class="sum_products">0.00</span> </p>
             <p>
-              <button class="btn btn-outline-dark shop-button" onClick="if(confirm('basket legen?')) { emptyBasket(); location.href='basket.html' }">empty basket</button> <!-- beetje lomp om hele pagina opnieuw te laden na legen -->
-              <button class="btn btn-outline-dark shop-button" onClick="location.href='index.html'">resume shopping</button>
+              <button class="btn btn-outline-dark shop-button" onClick="if(confirm('basket legen?')) { emptyBasket(); location.href='basket.html' }">Empty cart</button> <!-- beetje lomp om hele pagina opnieuw te laden na legen -->
+              <button class="btn btn-outline-dark shop-button" onClick="location.href='index.html'">Resume shopping</button>
             </p>
         </div>
 
@@ -82,7 +79,7 @@
               <input required
                      class="form-control"
                      name="name" 
-                     placeholder="Voornaam en Achternaam" 
+                     placeholder="First name and surname" 
                      oninvalid="this.setCustomValidity('Naam is verplicht')" 
                      onchange="this.setCustomValidity('')">
           </div>
@@ -114,7 +111,7 @@
                    onchange="this.setCustomValidity('')">
           </div>
           <div>
-            <label for="email">Email</label>
+            <label for="email">E-mail</label>
             <input required
                    class="form-control"
                    type="email" 
@@ -124,7 +121,7 @@
                    onchange="this.setCustomValidity('')">
           </div>
           <div>
-            <label for="phone">phone number</label>
+            <label for="phone">Phone number</label>
             <input required 
                    class="form-control"
                    type="tel" 
@@ -135,22 +132,22 @@
                    onchange="this.setCustomValidity('')">
           </div>
           <p>...and click order<p>
-          <p>When I've seen your order, You'll receive a "Tikkie".As soon as you've paid, I'll send you the codes.</p>
-          <button type="button" class="btn btn-outline-success shop-button" onclick="checkout()">order</button>
+          <p>When I have seen your order, you will receive a "Tikkie". The codes will be sent to your e-mail, after you have paid.</p>
+          <button type="button" class="btn btn-outline-success shop-button" onclick="checkout()">Order</button>
         </form>
         
         <!-- bevestiging van bestelling -->
         <div class="container" id="checkout_status">
              <template id="checkout_success">
                <div class="alert alert-success"> 
-                 Je bestelling is geplaatst en een bevestigingsmail is verzonden.<br>
-                 Je ordernummer is <span class="checkout_ordernumber"></span> 
+                 Your order has been placed and a confirmation mail has beent sent to your inbox.<br>
+                 Your ordernumber is <span class="checkout_ordernumber"></span> 
                </div>
              </template>
              <template id="checkout_failes">
                <div class="alert alert-danger">
-                 Je bestelling kon niet worden geplaatst, neem contact op met de shop<br>
-                 Foutmelding:<br>
+                 Your order could not be placed, contact the shop for more info.<br>
+                 Error message:<br>
                  <span class="checkout_error_message"></span>
                </div>
              </template>
@@ -159,13 +156,14 @@
     </main>
     <footer>
       <hr>
-      <p>Deze website is gemaakt door NICK en BASTIAAN voor het vak informatica op het Emmauscollege Rotterdam. Laatste bijgewerkt 1 oktober 2020.</p>
+      <p>Het maken van deze website is een opdracht voor het vak informatica op het Emmauscollege Rotterdam.<br>
+        We hadden echt geen idee wat we wilden verkopen, dus nu zijn het Fortnite skins.</p>
     </footer>
 
     <script src="/js/basket.js"></script>
     <script> // script to show basket when page is loaded
 
-        // toon bericht dat basket leeg is als basket leeg is
+        // toon bericht dat basket empty is als basket empty is
         function setIfEmptyMsg() {
           const basket = readBasket()
           var numkeys = Object.keys(basket).length
@@ -207,7 +205,7 @@
         const total = document.querySelector('.sum_products');
         total.textContent = basketTotalPrice().toFixed(2)
         
-        // voeg toe aan webpagina dat winkelmand leeg is als winkelmand leeg is
+        // voeg toe aan webpagina dat winkelmand empty is als winkelmand empty is
         setIfEmptyMsg()
 
       })();

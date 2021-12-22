@@ -113,7 +113,7 @@ function updateBasket(basket){
   document.querySelectorAll('.sum_products').forEach( el => el.textContent = sum.toFixed(2))
   document.querySelectorAll('.num_products').forEach( el => {
     if( num == 0){
-        el.textContent = "(leeg)"
+        el.textContent = "(empty)"
     } else if( num == 1) {
         el.textContent = `(${num} item)`
     } else {
