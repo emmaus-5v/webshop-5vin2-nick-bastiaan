@@ -161,10 +161,22 @@ background-color: red;
   background: #bdaebd;
   }
  
-  a:active{
-   color: rgba(87, 20, 131, 0.678) !important
-  }
+a:active{
+  color: rgba(87, 20, 131, 0.678) !important
+}
 
-  a:hover{
+a:hover{
   color:rgb(114, 192, 245)  
-  }
+}
+
+.mr-auto{
+  color:indigo
+}
+
+.toast-link{
+  color: rgba(87, 20, 131, 0.76);
+}
+
+.toast-link:hover{
+  color:rgb(228, 200, 253) !important
+}
