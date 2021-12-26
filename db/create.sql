@@ -45,11 +45,11 @@ CREATE TABLE rarities (
   rarity VARCHAR,
   price NUMERIC);
 
-  insert into rarities (rarity, price) values ("uncommon", 6.40);
-  insert into rarities (rarity, price) values ("rare", 8);
-  insert into rarities (rarity, price) values ("epic", 12);
-  insert into rarities (rarity, price) values ("legendary", 16)
+  insert into rarities (rarity, price) values ("Uncommon", 6.40);
+  insert into rarities (rarity, price) values ("Rare", 8);
+  insert into rarities (rarity, price) values ("Epic", 12);
+  insert into rarities (rarity, price) values ("Legendary", 16)
 
-/* SELECT * FRO products
+/* SELECT * FROM products
   LEFT OUTER JOIN rarities ON products.rarity_id = num 
 /* 

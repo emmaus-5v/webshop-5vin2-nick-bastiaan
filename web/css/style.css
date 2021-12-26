@@ -75,16 +75,17 @@ footer {
 
 .product > .card-header {
   height:3em;
-  background-color:rgb(193, 150, 212);
+  background-color:rgb(232, 220, 244);
 }
 
 .product-properties > li > .property-name {
   display: inline-block;
   width: 50px;
+  background-color:rgb(193, 150, 212);
 }
+
 .product_amount {
   width: 80px;
-
 }
 
 /* basket page */
@@ -93,7 +94,7 @@ footer {
   list-style: none; 
   padding-left: 5px; 
   font-size: 15px;
-  background-color:rgb(235, 214, 255);
+  background-color: rgb(232, 220, 244);
 }
 
 .product_row  .product-properties  li {
