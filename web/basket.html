@@ -16,9 +16,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/"></a>
-          </li>
+          
         </ul>
         <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0 btn-custom btn-light btn btn-outline-dark" type="submit"> Shopping cart <span class="num_products"></span></button></a>
       </div>
@@ -27,7 +25,7 @@
     <main>
         <!-- inhoud basket -->
         <div class="container" id="index">
-          <h4 class="text-centered"><br>Shopping cart</h4>
+          <h4 class="text-centered">Shopping cart</h4>
           <p class="text-centered">Here you see the list of articles inside of your cart.</p>   
           <!-- melding die wordt getoond als je basket empty is -->
           <div id="show_when_empty_basket">
@@ -46,6 +44,7 @@
               <ul class="product-properties">
                 <li><span class="propert-name">id: </span><span class="product_id_show"></span></li>
                 <li><span class="propert-name">Price: </span><span class="product_price"></span></li>
+                <li><span class= "propert-name">Rarity: </span><span class="product_rarity"></span></li>
                 <li><span class="propert-name">Amount: </span><span class="product_amount_show"></span></li>
               </ul>
               <!-- input field needed as parameter for + and - -->
@@ -197,6 +196,7 @@
           clone.querySelector(".product_id_show").textContent = product.id             
           clone.querySelector(".product_id").value = product.id 
           clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
+          clone.querySelector(".product_rarity").textContent = `${product.rarity.substr(0, 100)}`
           //clone.querySelector(".product_amount").value = amount            
           index.appendChild(clone)
         }

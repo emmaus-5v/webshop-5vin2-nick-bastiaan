@@ -6,12 +6,13 @@ body {
 }
 
 footer {
-  margin: 20px;
+  margin: 10px;
   font-size: 12px;
   color: rgb(99, 83, 100);
   background-color:rgb(232, 220, 244);
   padding-left: 3px;
   padding-bottom: 3px;
+  
 }
 
 
@@ -40,6 +41,9 @@ footer {
   height: 500px; 
   margin-bottom: 20px;
   background-color:rgb(232, 220, 244);
+  border-color: #50008588;
+  border-style: inset;
+  border-width: 5px;
 }
 
 .card-header {
@@ -105,7 +109,12 @@ background-color: red;
 .navbar-custom {
   background-color:rgb(171, 116, 203) ;
   text-align:center ;
+  border-color: #50008588;
+  border-style: inset;
+  border-width: 2.5px;
+  margin-bottom: 20px;
 }
+
 
 .btn-custom:hover{
   background-color: rgba(87, 20, 131, 0.76);
@@ -132,9 +141,30 @@ background-color: red;
   color:white;
 }
 
-.form-custom:active{
-border-color: rgb(225, 65, 65) !important;}
-
 .text-centered{
   text-align: center;
 }
+
+.toast{
+  z-index:6;
+}
+
+::-webkit-scrollbar{
+  width: 11px;
+  height: 11px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: radial-gradient(circle, #E8D4F7 0%,#500085 100%);
+  border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: #bdaebd;
+  }
+ 
+  a:active{
+   color: rgba(87, 20, 131, 0.678) !important
+  }
+
+  a:hover{
+  color:rgb(114, 192, 245)  
+  }

@@ -32,7 +32,7 @@ insert into products (name, description, code, rarity_id) values ('Dread Fate', 
 insert into products (name, description, code, rarity_id) values ('Kuno', 'Master the art of deception.', '364596740-3', 3);
 insert into products (name, description, code, rarity_id) values ('Ruby', 'Sometimes you gotta shine.', '816905633-0', 2);
 insert into products (name, description, code, rarity_id) values ('Maki Master', 'Roll up your sleeves and get to work.', '077030122-3', 2);
-insert into products (name, description, code, rarity_id) values ('Skully', 'Accept nothing less then stylish domination.', '445924201-X', 2);
+insert into products (name, description, code, rarity_id) values ('Skully', 'Accept stylish domination only.', '445924201-X', 2);
 insert into products (name, description, code, rarity_id) values ('Chance', 'Leave it to chance.', '693155505-7', 2);
 insert into products (name, description, code, rarity_id) values ('Aura', 'Get the goods in style.', '686928463-6', 1);
 insert into products (name, description, code, rarity_id) values ('Red Jade', 'Summon your fighting spirit.', '378367503-P', 1);
